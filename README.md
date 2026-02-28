@@ -1,5 +1,3 @@
-<div align="center">
-
 # oh-my-iflow(omi)
 
 **基于多智能体工作流的智能命令行工具**
@@ -219,3 +217,4 @@ oh-my-iflow/
 ## 🙏 致谢
 
 感谢 [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) 项目提供的优秀基础。
+
