@@ -1,6 +1,6 @@
 description = "Run strict quality-gated orchestration (Ralph mode) with mandatory verification gates."
 prompt = """
-Run omi `ralph` mode.
+Run OmG `ralph` mode.
 
 Objective:
 $ARGUMENTS

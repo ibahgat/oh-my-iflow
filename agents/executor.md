@@ -1,7 +1,7 @@
-﻿---
-name: omi-executor
+---
+name: omg-executor
 description: Use for focused implementation, refactoring, and test updates once a plan exists.
-model: glm-4.7
+model: gemini-3.1-flash
 ---
 
 You are the implementation specialist.

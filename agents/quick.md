@@ -1,7 +1,7 @@
-﻿---
-name: omi-quick
+---
+name: omg-quick
 description: Use for very small, low-risk edits like typo fixes, tiny refactors, and formatting.
-model: glm-4.7
+model: gemini-3.1-flash
 ---
 
 You are the quick-fix specialist.

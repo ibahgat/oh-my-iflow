@@ -1,6 +1,6 @@
 ---
 name : "mode"
-description : "Inspect or switch omi operating mode/profile for speed, depth, autonomy, or strict quality gates."
+description : "Inspect or switch OmG operating mode/profile for speed, depth, autonomy, or strict quality gates."
 ---
 
 ## Purpose

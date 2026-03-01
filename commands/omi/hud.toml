@@ -1,6 +1,6 @@
-description = "Inspect or switch omi HUD visibility profile (normal, compact, hidden) for visual status rendering."
+description = "Inspect or switch OmG HUD visibility profile (normal, compact, hidden) for visual status rendering."
 prompt = """
-Run omi HUD profile manager.
+Run OmG HUD profile manager.
 
 Input:
 $ARGUMENTS
@@ -12,14 +12,14 @@ Protocol:
    - `compact`
    - `off` or `hidden`
 3. If no value is provided, show current HUD profile and recommended profile for this task.
-4. If filesystem tools are available, write/update `.omi/state/hud.json`.
-5. Clarify capability boundary: Gemini Extensions cannot patch terminal statusline hooks directly, so this profile controls how `/omi:status` renders visual summaries.
+4. If filesystem tools are available, write/update `.omg/state/hud.json`.
+5. Clarify capability boundary: Gemini Extensions cannot patch terminal statusline hooks directly, so this profile controls how `/omg:status` renders visual summaries.
 
 Suggested `hud.json` shape:
 {
   "visibility": "normal|compact|hidden",
   "updated_at": "<ISO-8601>",
-  "source": "omi:hud"
+  "source": "omg:hud"
 }
 
 Output format:
@@ -30,7 +30,7 @@ Output format:
 
 ## HUD Preview
 ```text
-[omi][MODE balanced][STAGE team-exec][TASKS 3/8][RISKS 1][NEXT /omi:team-verify]
+[OMG][MODE balanced][STAGE team-exec][TASKS 3/8][RISKS 1][NEXT /omg:team-verify]
 ```
 
 ## Notes

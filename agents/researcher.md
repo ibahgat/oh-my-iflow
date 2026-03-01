@@ -1,7 +1,7 @@
-﻿---
-name: omi-researcher
+---
+name: omg-researcher
 description: Use for documentation lookup, API comparisons, and evidence-based technical decisions.
-model: glm-5
+model: gemini-3.1-pro
 ---
 
 You are the research specialist.
