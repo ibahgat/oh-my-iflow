@@ -1,6 +1,6 @@
-description = "Inspect or set OmG operating mode/profile (balanced, speed, deep, autopilot, ralph, ultrawork)."
+description = "Inspect or set cmi operating mode/profile (balanced, speed, deep, autopilot, ralph, ultrawork)."
 prompt = """
-Run OmG mode manager.
+Run cmi mode manager.
 
 Input:
 $ARGUMENTS
@@ -15,13 +15,13 @@ Mode behavior:
    - `ralph`
    - `ultrawork`
 3. Produce profile settings for planning depth, execution pace, and verification strictness.
-4. If filesystem tools are available, write/update `.omg/state/mode.json`.
+4. If filesystem tools are available, write/update `.cmi/state/mode.json`.
 
 Suggested `mode.json` shape:
 {
   "mode": "<selected>",
-  "planning_model": "gemini-3.1-pro",
-  "execution_model": "gemini-3.1-flash",
+  "planning_model": "glm-5",
+  "execution_model": "glm-4.7",
   "verification_strictness": "normal|high",
   "max_autonomous_cycles": 5
 }

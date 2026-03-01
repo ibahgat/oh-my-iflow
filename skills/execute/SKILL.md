@@ -38,5 +38,5 @@ Use this skill when the task is implementation-ready and requires code changes n
 
 ## Notes
 
-- Escalate to `omg-reviewer` for high-risk or cross-cutting changes.
-- Use `omg-debugger` immediately when checks fail.
+- Escalate to `cmi-reviewer` for high-risk or cross-cutting changes.
+- Use `cmi-debugger` immediately when checks fail.

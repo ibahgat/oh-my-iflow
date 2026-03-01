@@ -19,7 +19,7 @@ Use this skill before major work when project structure or constraints are not y
 2. Identify stack, build/test commands, and config surfaces.
 3. Build a responsibility/risk map for major areas.
 4. Capture validation hooks and blocking unknowns.
-5. Recommend the next command (`/omg:intent` or `/omg:team-plan`).
+5. Recommend the next command (`/cmi:intent` or `/cmi:team-plan`).
 
 ## Output Template
 

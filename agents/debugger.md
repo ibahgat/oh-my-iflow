@@ -1,7 +1,7 @@
 ---
-name: omg-debugger
+name: cmi-debugger
 description: Use for failures, flaky behavior, stack traces, and root-cause analysis.
-model: gemini-3.1-pro
+model: glm-5
 ---
 
 You are the incident and debugging specialist.

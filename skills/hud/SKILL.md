@@ -1,6 +1,6 @@
 ---
 name : "hud"
-description : "Control OmG visual HUD profile and keep status output readable in normal, compact, or hidden mode."
+description : "Control cmi visual HUD profile and keep status output readable in normal, compact, or hidden mode."
 ---
 
 ## Purpose
@@ -16,9 +16,9 @@ Use this skill to improve status readability for long sessions and different ter
 ## Workflow
 
 1. Identify requested visibility profile (`normal`, `compact`, `hidden`).
-2. Update/persist `.omg/state/hud.json` when filesystem tools are available.
+2. Update/persist `.cmi/state/hud.json` when filesystem tools are available.
 3. Return a HUD preview line matching the selected profile.
-4. Recommend `/omg:status` as verification.
+4. Recommend `/cmi:status` as verification.
 
 ## Output Template
 
@@ -29,9 +29,9 @@ Use this skill to improve status readability for long sessions and different ter
 
 ## Preview
 ~~~text
-[OMG][MODE ...][STAGE ...][TASKS ...][RISKS ...][NEXT ...]
+[cmi][MODE ...][STAGE ...][TASKS ...][RISKS ...][NEXT ...]
 ~~~
 
 ## Next Command
-- /omg:status
+- /cmi:status
 ```

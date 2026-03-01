@@ -1,6 +1,6 @@
 ---
 name : "hooks"
-description : "Operate OmG's extension-native hook pipeline with deterministic triggers, safety gates, and efficiency budgets."
+description : "Operate cmi's extension-native hook pipeline with deterministic triggers, safety gates, and efficiency budgets."
 ---
 
 ## Purpose
@@ -19,7 +19,7 @@ Use this skill to keep long sessions stable by turning recurrent workflow signal
 2. Assign each trigger to one execution lane (`P0-safety`, `P1-quality`, `P2-optimization`).
 3. Enforce deterministic order, idempotency keys, debounce, and timeout budgets.
 4. Enforce team-safety policy for worker/delegated sessions.
-5. Recommend validation (`/omg:hooks-validate`) and dry-run (`/omg:hooks-test`) before high-autonomy loops.
+5. Recommend validation (`/cmi:hooks-validate`) and dry-run (`/cmi:hooks-test`) before high-autonomy loops.
 
 ## Guardrails
 
@@ -43,6 +43,6 @@ Use this skill to keep long sessions stable by turning recurrent workflow signal
 - ...
 
 ## Next Commands
-1. /omg:hooks-validate
-2. /omg:hooks-test
+1. /cmi:hooks-validate
+2. /cmi:hooks-test
 ```

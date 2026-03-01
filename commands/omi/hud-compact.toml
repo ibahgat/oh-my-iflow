@@ -1,10 +1,10 @@
-description = "Quick toggle: set OmG HUD visibility profile to compact."
+description = "Quick toggle: set cmi HUD visibility profile to compact."
 prompt = """
-Set OmG HUD visibility profile to `compact`.
+Set cmi HUD visibility profile to `compact`.
 
 Protocol:
 1. Apply `visibility = compact`.
-2. If filesystem tools are available, write/update `.omg/state/hud.json` with source `omg:hud-compact`.
+2. If filesystem tools are available, write/update `.cmi/state/hud.json` with source `cmi:hud-compact`.
 3. Provide one-line compact HUD preview and recommended follow-up command.
 
 Output format:
@@ -14,9 +14,9 @@ Output format:
 
 ## Preview
 ```text
-[OMG][MODE balanced][STAGE team-exec][TASKS 3/8][NEXT /omg:team-verify]
+[cmi][MODE balanced][STAGE team-exec][TASKS 3/8][NEXT /cmi:team-verify]
 ```
 
 ## Next Command
-- /omg:status
+- /cmi:status
 """

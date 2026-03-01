@@ -55,6 +55,7 @@ Repeat `team-exec -> team-verify -> team-fix` until acceptance criteria pass or 
 - `deep-init`: one-time deep repository mapping before long sessions.
 - `loop`: strict continuation loop for unresolved acceptance criteria.
 - `hud`: visual status profile control (`normal`, `compact`, `hidden`) for `/omi:status`.
+- `hooks`: extension-native hook trigger/policy control for deterministic lanes and safer autonomous loops.
 
 ## Operating Modes
 
@@ -81,6 +82,10 @@ When filesystem tools are available, persist current workflow state:
 - `.omi/state/project-map.md`
 - `.omi/state/validation.md`
 - `.omi/state/hud.json`
+- `.omi/state/hooks.json`
+- `.omi/state/hooks-validation.md`
+- `.omi/state/hooks-last-test.md`
+- `.omi/hooks/*.md`
 
 If these files do not exist, create them only when a mode/lifecycle command is explicitly requested.
 
@@ -90,3 +95,4 @@ If these files do not exist, create them only when a mode/lifecycle command is e
 - Never claim completion while `loop` status is `continue` or unresolved blockers remain.
 - Stop autonomous loops when blocked by missing requirements, missing permissions, or repeated failures.
 - Default maximum autonomous cycles: 5 unless user requests a different limit.
+- Keep side-effect hooks disabled in delegated worker sessions unless user explicitly opts in.

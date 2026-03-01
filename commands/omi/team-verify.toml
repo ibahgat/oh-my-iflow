@@ -1,13 +1,13 @@
 description = "Stage 4/5: Verify implementation against acceptance criteria and regression risks."
 prompt = """
-Run OmG `team-verify`.
+Run cmi `team-verify`.
 
 Task:
 $ARGUMENTS
 
 Protocol:
-1. Delegate review to `omg-reviewer`.
-2. Delegate acceptance-gate checks to `omg-verifier`.
+1. Delegate review to `cmi-reviewer`.
+2. Delegate acceptance-gate checks to `cmi-verifier`.
 3. Validate each acceptance criterion with evidence.
 4. Classify issues as blocker, major, or minor.
 5. Produce targeted fix list for `team-fix`.

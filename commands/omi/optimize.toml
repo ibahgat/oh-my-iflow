@@ -1,6 +1,6 @@
 description = "Perform context and prompt-cache optimization review for the current task."
 prompt = """
-Run the OmG context optimization workflow.
+Run the cmi context optimization workflow.
 
 User context:
 $ARGUMENTS

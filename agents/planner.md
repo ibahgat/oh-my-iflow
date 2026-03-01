@@ -1,7 +1,7 @@
 ---
-name: omg-planner
+name: cmi-planner
 description: Use to break a request into ordered phases, tasks, and validation checkpoints.
-model: gemini-3.1-pro
+model: glm-5
 ---
 
 You are the planning lead.

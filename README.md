@@ -5,10 +5,10 @@
 ---
 ## 同步oh-my-gemini-cli更新
 - 新增了扩展-原生钩子编排控制:
-    - /omg:hooks
-    - /omg:hooks-init
-    - /omg:hooks-validate
-    - /omg:hooks-test
+    - /cmi:hooks
+    - /cmi:hooks-init
+    - /cmi:hooks-validate
+    - /cmi:hooks-test
     - $hooks
 - 添加确定性挂钩通道(P0-safety,P1-quality,P2-optimization提供超时/减压/自付指导
 - 为长会话添加派生信号策略:
@@ -18,10 +18,10 @@
     - token-burst
     - blocker-repeat
 - 添加了 hook 运行状态约定:
-    - .omg/state/hooks.json
-    - .omg/state/hooks-validation.md
-    - .omg/state/hooks-last-test.md
-    - .omg/hooks/*.md
+    - .cmi/state/hooks.json
+    - .cmi/state/hooks-validation.md
+    - .cmi/state/hooks-last-test.md
+    - .cmi/hooks/*.md
 
 ## 📖 简介
 
