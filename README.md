@@ -5,10 +5,10 @@
 ---
 ## 同步oh-my-gemini-cli更新
 - 新增了扩展-原生钩子编排控制:
-    - /cmi:hooks
-    - /cmi:hooks-init
-    - /cmi:hooks-validate
-    - /cmi:hooks-test
+    - /omi:hooks
+    - /omi:hooks-init
+    - /omi:hooks-validate
+    - /omi:hooks-test
     - $hooks
 - 添加确定性挂钩通道(P0-safety,P1-quality,P2-optimization提供超时/减压/自付指导
 - 为长会话添加派生信号策略:
@@ -18,10 +18,10 @@
     - token-burst
     - blocker-repeat
 - 添加了 hook 运行状态约定:
-    - .cmi/state/hooks.json
-    - .cmi/state/hooks-validation.md
-    - .cmi/state/hooks-last-test.md
-    - .cmi/hooks/*.md
+    - .omi/state/hooks.json
+    - .omi/state/hooks-validation.md
+    - .omi/state/hooks-last-test.md
+    - .omi/hooks/*.md
 
 ## 📖 简介
 
@@ -234,5 +234,6 @@ oh-my-iflow/
 本项目基于 [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) 修改，采用 MIT 许可证。
 
 ## 🙏 致谢
+
 
 感谢 [oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli) 项目提供的优秀基础。
