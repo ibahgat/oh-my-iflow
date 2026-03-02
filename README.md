@@ -3,6 +3,10 @@
 **基于多智能体工作流的智能命令行工具**
 
 ---
+添加[lsp-mcp](https://github.com/jonrad/lsp-mcp)，添加python、go、rust等语言的lsp支持
+添加一键安装脚本 install.sh 可选择全局安装与项目安装，安装前记得备份
+
+---
 ## 同步oh-my-gemini-cli更新
 - 新增了扩展-原生钩子编排控制:
     - /omi:hooks
