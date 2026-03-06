@@ -2,8 +2,8 @@
 
 ## 基于多智能体工作流的智能命令行工具
 
-- 当前仓库: https://github.com/hubo1989/oh-my-iflow
-- 上游仓库: https://github.com/sswym/oh-my-iflow
+- 当前仓库:[ https://github.com/hubo1989/oh-my-iflow](https://github.com/sswym/oh-my-iflow)
+- 上游仓库: [https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli)
 
 ---
 ## 更新
@@ -339,4 +339,5 @@ oh-my-iflow/
 🙏 致谢
 
 感谢 oh-my-gemini-cli 项目提供的优秀基础。
+
 
