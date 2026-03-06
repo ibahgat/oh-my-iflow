@@ -1,0 +1,65 @@
+{
+  "name": "cli-lsp-client",
+  "version": "1.24.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eli0shin/cli-lsp-client.git"
+  },
+  "main": "src/cli.ts",
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "^2.29.7",
+    "@commander-js/extra-typings": "^14.0.0",
+    "@eslint/js": "^9.33.0",
+    "@modelcontextprotocol/sdk": "^1.17.3",
+    "@total-typescript/ts-reset": "^0.6.1",
+    "@types/bun": "latest",
+    "@types/node": "latest",
+    "@types/semver": "^7.7.1",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "commander": "^14.0.1",
+    "eslint": "^9.33.0",
+    "eslint-for-ai": "^1.0.10",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "globals": "^16.3.0",
+    "prettier": "3.6.2",
+    "semver": "^7.7.4",
+    "typescript": "latest",
+    "typescript-eslint": "^8.39.1",
+    "vscode-jsonrpc": "^8.2.1",
+    "vscode-languageserver-types": "^3.17.5",
+    "zod": "3.25"
+  },
+  "bin": {
+    "cli-lsp-client": "./bin/cli-lsp-client"
+  },
+  "bugs": {
+    "url": "https://github.com/eli0shin/cli-lsp-client/issues"
+  },
+  "description": "CLI tool supporting claude code hooks for fast LSP diagnostics with background daemon and multi-project support",
+  "files": [
+    "bin/",
+    "script/preinstall.mjs",
+    "script/postinstall.mjs",
+    "README.md"
+  ],
+  "homepage": "https://github.com/eli0shin/cli-lsp-client#readme",
+  "license": "MIT",
+  "scripts": {
+    "build": "./script/build.ts",
+    "release": "./script/release.ts",
+    "dev": "bun run src/cli.ts",
+    "typecheck": "bun tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "test": "bun test",
+    "version": "bunx changeset version && bun run script/bump-plugin-versions.ts",
+    "test:watch": "bun test tests/ --watch",
+    "validate:plugin": "claude plugin validate .",
+    "preinstall": "node ./script/preinstall.mjs",
+    "postinstall": "node ./script/postinstall.mjs"
+  },
+  "type": "module"
+}
