@@ -3,6 +3,12 @@
 **基于多智能体工作流的智能命令行工具**
 
 ---
+- 删除lsp-mcp，采用[cli-lsp-cient](https://github.com/eli0shin/cli-lsp-client) 增加rust语言支持
+- 增加python、rust、go、shell、以及前端语言文件的自动识别格式化功能。
+![](./images/image.png)
+![](./images/a1586990-63dd-45ec-be19-d536721f99ad.png)
+
+---
 - 添加[lsp-mcp](https://github.com/jonrad/lsp-mcp)，添加python、go、rust等语言的lsp支持
 - 添加一键安装脚本 install.sh 可选择全局安装与项目安装，安装前记得备份
 
