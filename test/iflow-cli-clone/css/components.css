@@ -1,0 +1,453 @@
+/* Component Styles */
+
+/* Language Switcher */
+.language-switcher {
+    position: relative;
+}
+
+.language-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-bg-card);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: var(--border-radius-md);
+    color: var(--color-text-primary);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-fast);
+}
+
+.language-btn:hover {
+    border-color: var(--color-accent-cyan);
+    background: var(--color-bg-hover);
+}
+
+.language-dropdown {
+    position: absolute;
+    top: calc(100% + var(--spacing-sm));
+    right: 0;
+    min-width: 120px;
+    background: var(--color-bg-card);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-xs);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all var(--transition-fast);
+    z-index: var(--z-dropdown);
+}
+
+.language-dropdown.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    color: var(--color-text-secondary);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-sm);
+    border-radius: var(--border-radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.language-option:hover {
+    background: var(--color-bg-hover);
+    color: var(--color-text-primary);
+}
+
+.language-option.active {
+    color: var(--color-accent-cyan);
+}
+
+/* Install Command Box */
+.install-command {
+    background: var(--color-bg-card);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-xl) auto;
+    max-width: 600px;
+    position: relative;
+    transition: all var(--transition-base);
+}
+
+.install-command:hover {
+    border-color: var(--color-accent-cyan);
+    box-shadow: var(--shadow-glow-cyan);
+}
+
+.install-command code {
+    display: block;
+    color: var(--color-accent-green);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-base);
+    word-break: break-all;
+    margin-right: 60px;
+}
+
+.copy-btn {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-accent-cyan);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-xs);
+    transition: all var(--transition-fast);
+}
+
+.copy-btn:hover {
+    background: rgba(6, 182, 212, 0.2);
+    transform: scale(1.05);
+}
+
+.copy-btn.copied {
+    background: rgba(34, 197, 94, 0.1);
+    border-color: var(--color-accent-green);
+    color: var(--color-accent-green);
+}
+
+/* Terminal */
+.terminal {
+    background: var(--color-bg-secondary);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    max-width: 800px;
+    margin: var(--spacing-xl) auto;
+}
+
+.terminal-header {
+    background: rgba(0, 0, 0, 0.3);
+    padding: var(--spacing-md) var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.terminal-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.terminal-btn.close { background: #ff5f57; }
+.terminal-btn.minimize { background: #ffbd2e; }
+.terminal-btn.maximize { background: #28c840; }
+
+.terminal-title {
+    margin-left: var(--spacing-md);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+}
+
+.terminal-status {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--color-accent-green);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.terminal-body {
+    padding: var(--spacing-lg);
+    min-height: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    font-family: var(--font-mono);
+    font-size: var(--font-size-sm);
+    line-height: 1.8;
+}
+
+.terminal-line {
+    margin-bottom: var(--spacing-xs);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+}
+
+.terminal-prompt {
+    color: var(--color-accent-cyan);
+    white-space: nowrap;
+}
+
+.terminal-input {
+    color: var(--color-text-primary);
+    flex: 1;
+}
+
+.terminal-output {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.terminal-error {
+    color: var(--color-error);
+    margin-bottom: var(--spacing-sm);
+}
+
+.terminal-success {
+    color: var(--color-accent-green);
+    margin-bottom: var(--spacing-sm);
+}
+
+.terminal-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.2em;
+    background: var(--color-accent-cyan);
+    animation: blink 1s infinite;
+    vertical-align: text-bottom;
+}
+
+/* Cards */
+.card {
+    background: var(--color-bg-card);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-border);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.card:hover {
+    border-color: var(--color-accent-cyan);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-icon-1);
+    border-radius: var(--border-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-2xl);
+    color: var(--color-accent-cyan);
+}
+
+.card-title {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-primary);
+}
+
+.card-description {
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+}
+
+/* Tool Icon */
+.tool-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--color-bg-card);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-3xl);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.tool-icon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-icon-2);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.tool-icon:hover {
+    border-color: var(--color-accent-cyan);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow-cyan);
+}
+
+.tool-icon:hover::before {
+    opacity: 1;
+}
+
+.tool-icon span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xl);
+    background: var(--color-bg-card);
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-md);
+    width: fit-content;
+}
+
+.tab-btn {
+    padding: var(--spacing-sm) var(--spacing-xl);
+    background: transparent;
+    border: none;
+    color: var(--color-text-secondary);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-sm);
+    border-radius: var(--border-radius-sm);
+    transition: all var(--transition-fast);
+    position: relative;
+}
+
+.tab-btn:hover {
+    color: var(--color-text-primary);
+}
+
+.tab-btn.active {
+    color: var(--color-text-primary);
+    background: rgba(6, 182, 212, 0.1);
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--color-accent-cyan);
+    border-radius: 2px;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeInUp 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Steps */
+.step-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.step-item {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: flex-start;
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    background: var(--gradient-text-1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-bg-primary);
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+}
+
+.step-content h4 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-primary);
+}
+
+.step-content p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: fixed;
+    bottom: var(--spacing-xl);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: var(--z-sticky);
+    opacity: 1;
+    transition: opacity var(--transition-base);
+}
+
+.scroll-indicator.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.scroll-indicator button {
+    width: 50px;
+    height: 50px;
+    background: var(--color-bg-card);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent-cyan);
+    font-size: var(--font-size-xl);
+    transition: all var(--transition-fast);
+    animation: scrollBounce 2s infinite;
+}
+
+.scroll-indicator button:hover {
+    background: var(--color-bg-hover);
+    border-color: var(--color-accent-cyan);
+    transform: scale(1.1);
+    box-shadow: var(--shadow-glow-cyan);
+}

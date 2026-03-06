@@ -1,0 +1,387 @@
+/* Responsive Design */
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--spacing-lg);
+    }
+
+    .section {
+        padding: var(--spacing-4xl) 0;
+    }
+
+    .section-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .section-subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    .grid-2,
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    .header-content {
+        padding: 0 var(--spacing-lg);
+    }
+
+    .terminal {
+        max-width: 100%;
+    }
+
+    .install-command {
+        margin: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .tabs {
+        width: 100%;
+    }
+
+    .tab-btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+        flex: 1;
+        text-align: center;
+    }
+}
+
+/* Mobile Large (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    .section {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .section-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .section-subtitle {
+        font-size: var(--font-size-sm);
+    }
+
+    .grid-2,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-between {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .card {
+        padding: var(--spacing-lg);
+    }
+
+    .card-icon {
+        width: 48px;
+        height: 48px;
+        font-size: var(--font-size-xl);
+    }
+
+    .card-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .tool-icon {
+        width: 64px;
+        height: 64px;
+        font-size: var(--font-size-2xl);
+    }
+
+    .terminal-header {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    .terminal-body {
+        padding: var(--spacing-md);
+        font-size: var(--font-size-xs);
+    }
+
+    .terminal-prompt {
+        white-space: pre-wrap;
+    }
+
+    .step-list {
+        gap: var(--spacing-md);
+    }
+
+    .step-item {
+        gap: var(--spacing-md);
+    }
+
+    .step-number {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+        font-size: var(--font-size-xs);
+    }
+
+    .step-content h4 {
+        font-size: var(--font-size-base);
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .scroll-indicator {
+        bottom: var(--spacing-lg);
+    }
+
+    .scroll-indicator button {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-lg);
+    }
+}
+
+/* Mobile Medium (max-width: 425px) */
+@media (max-width: 425px) {
+    :root {
+        --font-size-6xl: 2.5rem;
+        --font-size-5xl: 2rem;
+        --font-size-4xl: 1.75rem;
+        --font-size-3xl: 1.5rem;
+        --font-size-2xl: 1.25rem;
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .header {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .logo {
+        font-size: var(--font-size-lg);
+    }
+
+    .language-btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: var(--font-size-xs);
+    }
+
+    .language-dropdown {
+        min-width: 100px;
+    }
+
+    .section {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .install-command {
+        padding: var(--spacing-md);
+        margin: var(--spacing-md) 0;
+    }
+
+    .install-command code {
+        font-size: var(--font-size-sm);
+    }
+
+    .copy-btn {
+        top: var(--spacing-sm);
+        right: var(--spacing-sm);
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 10px;
+    }
+
+    .terminal {
+        border-radius: var(--border-radius-md);
+    }
+
+    .terminal-header {
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .terminal-btn {
+        width: 10px;
+        height: 10px;
+    }
+
+    .terminal-title {
+        font-size: 10px;
+    }
+
+    .terminal-body {
+        padding: var(--spacing-sm);
+        min-height: 250px;
+    }
+
+    .card {
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius-md);
+    }
+
+    .card-icon {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-lg);
+    }
+
+    .tabs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tab-btn {
+        width: 100%;
+        padding: var(--spacing-sm);
+    }
+
+    .tab-btn.active::after {
+        left: var(--spacing-sm);
+        right: var(--spacing-sm);
+        bottom: 0;
+        width: auto;
+        height: 2px;
+    }
+
+    .footer {
+        padding: var(--spacing-2xl) 0 var(--spacing-lg);
+    }
+
+    .footer-section h3 {
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Mobile Small (max-width: 375px) */
+@media (max-width: 375px) {
+    :root {
+        --font-size-6xl: 2rem;
+        --font-size-5xl: 1.75rem;
+        --font-size-4xl: 1.5rem;
+        --font-size-3xl: 1.25rem;
+        --font-size-2xl: 1.125rem;
+    }
+
+    .container {
+        padding: 0 var(--spacing-xs);
+    }
+
+    .section-title {
+        line-height: 1.2;
+    }
+
+    .tool-icon {
+        width: 56px;
+        height: 56px;
+        font-size: var(--font-size-xl);
+    }
+
+    .step-content h4 {
+        font-size: var(--font-size-sm);
+    }
+
+    .step-content p {
+        font-size: var(--font-size-xs);
+    }
+
+    .social-link {
+        width: 36px;
+        height: 36px;
+        font-size: var(--font-size-sm);
+    }
+
+    .scroll-indicator button {
+        width: 36px;
+        height: 36px;
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Landscape Orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+    .section {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .terminal {
+        max-height: 250px;
+    }
+
+    .terminal-body {
+        max-height: 180px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .header,
+    .scroll-indicator,
+    .copy-btn,
+    .language-switcher {
+        display: none;
+    }
+
+    .card,
+    .terminal {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+    .section-title {
+        color: black;
+        -webkit-text-fill-color: black;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --color-bg-primary: #000000;
+        --color-bg-secondary: #1a1a1a;
+        --color-text-primary: #ffffff;
+        --color-text-secondary: #cccccc;
+    }
+
+    .card,
+    .terminal,
+    .install-command {
+        border-width: 2px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark Mode System Preference */
+@media (prefers-color-scheme: dark) {
+    /* Already using dark theme by default */
+}
+
+/* Light Mode System Preference (if needed in future) */
+@media (prefers-color-scheme: light) {
+    /* Could add light mode styles here */
+}

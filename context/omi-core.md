@@ -13,11 +13,14 @@ This extension provides a multi-agent workflow layer for iFLOW CLI.
 - Keep each phase explicit and verifiable.
 
 3. Delegate by role.
+- Use `omi-director` for team-level orchestration and conflict resolution.
 - Use `omi-architect` for design and tradeoffs.
 - Use `omi-planner` for task decomposition.
 - Use `omi-product` for PRD-quality scope and acceptance criteria.
+- Use `omi-consultant` for strategic criteria and recommendation framing.
 - Use `omi-executor` for implementation.
 - Use `omi-reviewer`, `omi-verifier`, and `omi-debugger` for quality and recovery.
+- Use `omi-editor` for final output packaging.
 
 4. Minimize context load.
 - Read only files needed for the current step.
@@ -31,7 +34,11 @@ This extension provides a multi-agent workflow layer for iFLOW CLI.
 - Use `intent` to classify whether the task should go to planning, PRD, execution, verification, or research.
 - Do not jump to implementation if acceptance criteria are missing.
 
-7. Keep loop discipline for incomplete work.
+7. Assemble a fit-for-task team before stage execution when needed.
+- Use `team-assemble` to map domain specialists and format specialists.
+- Require explicit approval before starting autonomous team execution.
+
+8. Keep loop discipline for incomplete work.
 - Use `loop` to continue `team-exec -> team-verify -> team-fix` cycles.
 - Do not mark done while blocker/major items remain.
 
@@ -39,6 +46,7 @@ This extension provides a multi-agent workflow layer for iFLOW CLI.
 
 Use this stage order for complex work:
 
+0. `team-assemble` - build and confirm a task-fit multi-role roster
 1. `team-plan` - decompose and map dependencies
 2. `team-prd` - lock scope, constraints, and acceptance criteria
 3. `team-exec` - implement one validated slice at a time
@@ -50,12 +58,17 @@ Repeat `team-exec -> team-verify -> team-fix` until acceptance criteria pass or 
 ## Intake and Rule Controls
 
 - `intent`: request-intent gate and stage routing.
+- `team-assemble`: dynamic roster planning with approval gate before execution.
 - `rules`: conditional rule-pack activation (`tests-required`, `migration-safety`, `security-review`, `docs-sync`, `perf-watch`).
 - `memory`: maintain durable memory index (`MEMORY.md`) and modular rule packs (`.omi/rules/*.md`).
 - `deep-init`: one-time deep repository mapping before long sessions.
 - `loop`: strict continuation loop for unresolved acceptance criteria.
 - `hud`: visual status profile control (`normal`, `compact`, `hidden`) for `/omi:status`.
 - `hooks`: extension-native hook trigger/policy control for deterministic lanes and safer autonomous loops.
+- `reasoning`: reasoning effort profile (`low`, `medium`, `high`, `xhigh`) to tune depth/cost posture.
+- `approval`: approval posture (`suggest`, `auto`, `full-auto`) for autonomous action confirmation policy.
+- `doctor`: readiness diagnostics for command/skill/state integrity and team safety posture.
+- `cancel`: alias lifecycle stop path with resume-ready handoff.
 
 ## Operating Modes
 
@@ -77,6 +90,7 @@ When filesystem tools are available, persist current workflow state:
 - `.omi/memory/*.md`
 - `.omi/rules/*.md`
 - `.omi/state/intent.md`
+- `.omi/state/team-assembly.md`
 - `.omi/state/rules.md`
 - `.omi/state/deep-init.md`
 - `.omi/state/project-map.md`
@@ -85,6 +99,9 @@ When filesystem tools are available, persist current workflow state:
 - `.omi/state/hooks.json`
 - `.omi/state/hooks-validation.md`
 - `.omi/state/hooks-last-test.md`
+- `.omi/state/reasoning.json`
+- `.omi/state/approval.json`
+- `.omi/state/doctor.md`
 - `.omi/hooks/*.md`
 
 If these files do not exist, create them only when a mode/lifecycle command is explicitly requested.

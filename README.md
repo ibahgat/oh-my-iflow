@@ -7,6 +7,13 @@
 
 ---
 ## 更新
+### 2026-03-07同步上游更新
+```bash
+/omi:team-assemble 请帮我完全复刻这个页面：https://cli.iflow.cn/?spm=3e711c3f.2ef5001f.0.0.3d8173e8mb1HSX
+```
+![](./images/sfgobsdnfa.png)
+![](./images/aoifdrijginvfin.jpeg)
+
 ### 2026-03-06
 - 优化安装脚本install.sh
 - 删除lsp-mcp，采用[cli-lsp-cient](https://github.com/eli0shin/cli-lsp-client) 增加rust语言支持
@@ -339,6 +346,3 @@ oh-my-iflow/
 🙏 致谢
 
 感谢 oh-my-gemini-cli 项目提供的优秀基础。
-
-
-

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iFlow CLI - 效率，从心流开始">
+    <meta name="keywords" content="iFlow, CLI, AI, 命令行, 开发工具">
+    <title>iFlow CLI - 效率，从心流开始</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">iFlow CLI</div>
+            <div class="language-switcher">
+                <button class="language-btn" id="languageBtn">
+                    <i class="fas fa-globe"></i>
+                    <span id="currentLang">中文</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <div class="language-option active" data-lang="zh">
+                        <span>🇨🇳</span>
+                        <span>中文</span>
+                    </div>
+                    <div class="language-option" data-lang="en">
+                        <span>🇺🇸</span>
+                        <span>English</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="section" id="hero">
+            <div class="container">
+                <h1 class="section-title gradient-text-animated" data-i18n="hero.title">iFlow CLI</h1>
+                <p class="section-subtitle" data-i18n="hero.subtitle">效率，从心流开始</p>
+                
+                <!-- Install Command -->
+                <div class="install-command">
+                    <code>npm install -g @iflow/cli</code>
+                    <button class="copy-btn" data-copy="npm install -g @iflow/cli">
+                        <i class="fas fa-copy"></i>
+                        <span data-i18n="copy">复制</span>
+                    </button>
+                </div>
+
+                <!-- Terminal Demo -->
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-btn close"></div>
+                        <div class="terminal-btn minimize"></div>
+                        <div class="terminal-btn maximize"></div>
+                        <span class="terminal-title">iFlow Terminal</span>
+                        <div class="terminal-status">
+                            <span class="status-dot"></span>
+                            <span>Connected</span>
+                        </div>
+                    </div>
+                    <div class="terminal-body" id="terminalBody">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$ iflow init</span>
+                        </div>
+                        <div class="terminal-output">✓ Initialized iFlow project</div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$ iflow create --component Button</span>
+                        </div>
+                        <div class="terminal-output">✓ Created Button component</div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$ iflow test</span>
+                        </div>
+                        <div class="terminal-success">✓ All tests passed</div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$ iflow deploy</span>
+                        </div>
+                        <div class="terminal-success">✓ Deployed successfully</div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$ <span class="terminal-cursor"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integration Section -->
+        <section class="section fade-in-section" id="integration">
+            <div class="container">
+                <h2 class="section-title" data-i18n="integration.title">无缝集成到你的环境</h2>
+                <p class="section-subtitle" data-i18n="integration.subtitle">既可在你喜欢的开发工具中直接使用，也可集成到现有系统实现自动化</p>
+                
+                <div class="grid grid-4" style="justify-items: center;">
+                    <div class="tool-icon" title="JetBrains">
+                        <span><i class="fas fa-code"></i></span>
+                    </div>
+                    <div class="tool-icon" title="VSCode">
+                        <span><i class="fas fa-file-code"></i></span>
+                    </div>
+                    <div class="tool-icon" title="Android Studio">
+                        <span><i class="fab fa-android"></i></span>
+                    </div>
+                    <div class="tool-icon" title="XCode">
+                        <span><i class="fab fa-apple"></i></span>
+                    </div>
+                    <div class="tool-icon" title="Jenkins">
+                        <span><i class="fas fa-server"></i></span>
+                    </div>
+                    <div class="tool-icon" title="Jira">
+                        <span><i class="fab fa-jira"></i></span>
+                    </div>
+                    <div class="tool-icon" title="Warp">
+                        <span><i class="fas fa-terminal"></i></span>
+                    </div>
+                    <div class="tool-icon" title="Bash">
+                        <span><i class="fas fa-terminal"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section fade-in-section" id="features">
+            <div class="container">
+                <h2 class="section-title" data-i18n="features.title">产品亮点</h2>
+                <p class="section-subtitle" data-i18n="features.subtitle">汇集前沿AI模型，重塑研发范式</p>
+                
+                <div class="grid grid-2">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="card-title" data-i18n="features.feature1.title">免费的前沿模型</h3>
+                        <p class="card-description" data-i18n="features.feature1.description">畅享心流开放平台，零成本体验 Kimi K2、Qwen3 Coder、GLM4.5 等业界最新模型，让先进技术触手可及。</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="card-title" data-i18n="features.feature2.title">多智能体协作</h3>
+                        <p class="card-description" data-i18n="features.feature2.description">复杂任务智能分解，专业智能体并发协作，独立上下文避免干扰，瞬间拥有一支全能专家团队。</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3 class="card-title" data-i18n="features.feature3.title">开放智能体生态</h3>
+                        <p class="card-description" data-i18n="features.feature3.description">汇聚社区智慧结晶，精选安全认证的 MCP 市场与智能体商店，创作如搭积木般简单直观。</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="card-title" data-i18n="features.feature4.title">自然语言交互</h3>
+                        <p class="card-description" data-i18n="features.feature4.description">告别复杂命令，用日常对话驱动 AI，从代码开发到生活助理，一句话解决所有需求。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IDE Plugin Section -->
+        <section class="section fade-in-section" id="ide-plugin">
+            <div class="container">
+                <h2 class="section-title" data-i18n="ide.title">为主流 IDE 定制的插件</h2>
+                <p class="section-subtitle" data-i18n="ide.subtitle">无缝集成到你熟悉的开发环境中，提升开发效率</p>
+                
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="vscode">
+                        <i class="fas fa-file-code"></i>
+                        VSCode
+                    </button>
+                    <button class="tab-btn" data-tab="jetbrains">
+                        <i class="fas fa-code"></i>
+                        JetBrains
+                    </button>
+                </div>
+                
+                <!-- VSCode Tab Content -->
+                <div class="tab-content active" id="vscode-content">
+                    <div class="card">
+                        <div class="step-list">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4 data-i18n="ide.vscode.step1.title">打开 VSCode 扩展市场</h4>
+                                    <p data-i18n="ide.vscode.step1.description">在 VSCode 中按下 Ctrl+Shift+X 打开扩展面板</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4 data-i18n="ide.vscode.step2.title">搜索 iFlow 插件</h4>
+                                    <p data-i18n="ide.vscode.step2.description">在搜索框中输入 "iFlow" 并找到官方插件</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4 data-i18n="ide.vscode.step3.title">点击安装</h4>
+                                    <p data-i18n="ide.vscode.step3.description">点击安装按钮，等待插件下载并安装完成</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4 data-i18n="ide.vscode.step4.title">重启 VSCode</h4>
+                                    <p data-i18n="ide.vscode.step4.description">重启 VSCode 使插件生效，开始使用</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- JetBrains Tab Content -->
+                <div class="tab-content" id="jetbrains-content">
+                    <div class="card">
+                        <div class="step-list">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4 data-i18n="ide.jetbrains.step1.title">打开插件设置</h4>
+                                    <p data-i18n="ide.jetbrains.step1.description">在 JetBrains IDE 中进入 File → Settings → Plugins</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4 data-i18n="ide.jetbrains.step2.title">搜索 Marketplace</h4>
+                                    <p data-i18n="ide.jetbrains.step2.description">在 Marketplace 中搜索 "iFlow" 插件</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4 data-i18n="ide.jetbrains.step3.title">安装插件</h4>
+                                    <p data-i18n="ide.jetbrains.step3.description">点击 Install 按钮安装插件</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4 data-i18n="ide.jetbrains.step4.title">重启 IDE</h4>
+                                    <p data-i18n="ide.jetbrains.step4.description">重启 IDE 使插件生效</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logo 3D Section -->
+        <section class="section fade-in-section" id="logo-3d">
+            <div class="container">
+                <div style="text-align: center;">
+                    <!-- ASCII Logo -->
+                    <pre style="
+                        font-size: 10px;
+                        line-height: 1;
+                        color: var(--color-accent-cyan);
+                        text-align: center;
+                        margin: 0 auto var(--spacing-xl);
+                        overflow-x: auto;
+                        max-width: 100%;
+                    ">
+    ██████╗ ██████╗ ███████╗███╗   ██╗██████╗ ███████╗
+    ██╔══██╗██╔══██╗██╔════╝████╗  ██║██╔══██╗██╔════╝
+    ██║  ██║██████╔╝█████╗  ██╔██╗ ██║██║  ██║███████╗
+    ██║  ██║██╔══██╗██╔══╝  ██║╚██╗██║██║  ██║╚════██║
+    ██████╔╝██║  ██║███████╗██║ ╚████║██████╔╝███████║
+    ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═════╝ ╚══════╝
+                    </pre>
+                    
+                    <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-xl);">
+                        快速开始，一行命令即可体验
+                    </p>
+                    
+                    <!-- Install Command -->
+                    <div class="install-command" style="display: inline-block;">
+                        <code>curl -fsSL https://cli.iflow.cn/install.sh | sh</code>
+                        <button class="copy-btn" data-copy="curl -fsSL https://cli.iflow.cn/install.sh | sh">
+                            <i class="fas fa-copy"></i>
+                            <span data-i18n="copy">复制</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo" style="margin-bottom: var(--spacing-md);">iFlow CLI</div>
+                    <p style="color: var(--color-text-secondary); line-height: 1.8;">
+                        效率，从心流开始<br>
+                        让 AI 助力你的开发之旅
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.product">产品</h3>
+                    <ul>
+                        <li><a href="#">iFlow CLI</a></li>
+                        <li><a href="#">IDE 插件</a></li>
+                        <li><a href="#">API 文档</a></li>
+                        <li><a href="#">定价</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.developers">开发者</h3>
+                    <ul>
+                        <li><a href="#">快速开始</a></li>
+                        <li><a href="#">教程</a></li>
+                        <li><a href="#">示例</a></li>
+                        <li><a href="#">社区</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.support">支持</h3>
+                    <ul>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-links" style="justify-content: center; margin-bottom: var(--spacing-md);">
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" class="social-link" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <p>&copy; 2026 iFlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator">
+        <button id="scrollDownBtn">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="js/copy-command.js"></script>
+    <script src="js/terminal-demo.js"></script>
+    <script src="js/tabs.js"></script>
+</body>
+</html>

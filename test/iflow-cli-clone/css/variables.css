@@ -1,0 +1,97 @@
+/* CSS Variables - Colors, fonts, spacing */
+
+:root {
+    /* Primary Colors */
+    --color-bg-primary: #0a0e1a;
+    --color-bg-secondary: #0f172a;
+    --color-bg-card: rgba(15, 23, 42, 0.8);
+    --color-bg-hover: rgba(15, 23, 42, 0.95);
+
+    /* Text Colors */
+    --color-text-primary: #e2e8f0;
+    --color-text-secondary: #94a3b8;
+    --color-text-muted: #64748b;
+
+    /* Accent Colors */
+    --color-accent-cyan: #06b6d4;
+    --color-accent-green: #22c55e;
+    --color-accent-purple: #8b5cf6;
+    --color-accent-purple-light: #a855f7;
+    --color-accent-pink: #ec4899;
+
+    /* Functional Colors */
+    --color-error: #ef4444;
+    --color-warning: #f59e0b;
+    --color-info: #06b6d4;
+    --color-success: #22c55e;
+
+    /* Gradients */
+    --gradient-bg-1: linear-gradient(135deg, rgba(6, 182, 212, 0.05), rgba(139, 92, 246, 0.05));
+    --gradient-bg-2: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(6, 182, 212, 0.05));
+    --gradient-bg-3: linear-gradient(135deg, rgba(6, 182, 212, 0.08), rgba(139, 92, 246, 0.08));
+
+    --gradient-text-1: linear-gradient(135deg, #06b6d4, #22c55e, #8b5cf6);
+    --gradient-text-2: linear-gradient(135deg, #8b5cf6, #06b6d4, #22c55e);
+    --gradient-text-3: linear-gradient(135deg, #22c55e, #06b6d4);
+
+    --gradient-icon-1: linear-gradient(135deg, rgba(22, 163, 74, 0.2), rgba(6, 182, 212, 0.2));
+    --gradient-icon-2: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.2));
+    --gradient-border: linear-gradient(135deg, rgba(6, 182, 212, 0.3), rgba(139, 92, 246, 0.3));
+
+    /* Typography */
+    --font-mono: 'Courier New', Monaco, 'Cascadia Code', 'SF Mono', Consolas, monospace;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+    /* Font Sizes */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+    --font-size-6xl: 3.75rem;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+    --spacing-4xl: 6rem;
+    --spacing-5xl: 8rem;
+
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+    --border-radius-2xl: 24px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.3);
+    --shadow-glow-cyan: 0 0 20px rgba(6, 182, 212, 0.3);
+    --shadow-glow-green: 0 0 20px rgba(34, 197, 94, 0.3);
+    --shadow-glow-purple: 0 0 20px rgba(139, 92, 246, 0.3);
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-base: 300ms ease;
+    --transition-slow: 500ms ease;
+
+    /* Z-index */
+    --z-base: 1;
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal: 400;
+    --z-popover: 500;
+    --z-tooltip: 600;
+}
